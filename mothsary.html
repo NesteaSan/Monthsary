@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+          
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: justify;
+            color: white;
+            background: linear-gradient(45deg,pink,violet);
+        }
+
+    
+        .container {   
+        margin: auto;   
+        width: 35%;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        text-align: center;
+        border: 3px solid white;
+        padding: 10px;
+        background: #df51d8;
+        color: white;
+    
+    }   
+
+
+.fa-heart {
+    color: rgb(60, 0, 60);
+    font-size: 25px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(180vh) ;
+    }
+}
+    </style>
+
+
+<body>
+    
+    <br></br><br></br><div class="container"> 
+<h1> Happy 3rd Monthsary, Mahal ko.</h1>
+<video width="520" height="350" controls>
+    <source src="3rd.mp4">
+  </video>
+<p>Hi, baby ko. I hope you're reading this letter well.<p>
+<p>Happy happy third Monthsary sa ating dalawa</p>
+<p>Today will mark our third month as couple and partner in crime</p>
+<p>I hope na eenjoy mo every moment we have together</p>
+<p>kahit minsan may away tayo, I still find it so adorable being with you</p>
+<p>I am so sorry kung minsan nagkakaron tayo ng misunderstanding because of me</p>
+<p>alam ko naman po na normal mag away as couple but I don't want to fight you</p>
+<p>you deserve everything, my love.</p>
+<p>sorry kung maikli lang yung message ko but with every day that I have with you</p>
+<p>is always the best days of my life</p>
+<p>and I appreciate everything that you do for me, even if its small things for you</p>
+<p>and so this message might have a little poem at the end</p>
+<p>and it will mark as my love for you</p>
+<br></br>
+<br></br>
+<br></br>
+<p>to my love, that's perfect</p>
+<p>to the best, retrospect</p>
+<p>to love's sound effects</p>
+<p>our paths intesect</p><br></br>
+<p>today is the third month of us being in love</p>
+<p> a wish I never expected from someone above</p>
+<p>just like the mornings where there are doves</p>
+<p>loving you is not like throwing gloves</p><br></br>
+<p>I hope today will also last for a lifetime</p>
+<p>being one with you starts with the bell chime</p>
+<p>wishing everyday will have you on our bedtime</p>
+<p>loving you from the start till the end of time</p><br></br>
+
+<p>
+<div id = "container">
+
+</div>
+</div>
+
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<script>
+
+    const body = document.querySelector("body");
+    
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.className = "fas fa-heart";
+        heart.style.left = (Math.random() * 100)+"vw";
+        heart.style.animationDuration = (Math.random()*3)+2+"s"
+        body.appendChild(heart);
+    }
+    setInterval(createHeart,100);
+    setInterval(function name(params) {
+        var heartArr = document.querySelectorAll(".fa-heart")
+        if (heartArr.length > 200) {
+           heartArr[0].remove()
+        }
+        //console.log(heartArr);
+    },100)
+    
+    </script>
+    
+</body>
+
+
+</html>
